@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+%%\usepackage[MeX]{polski}
+%%\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{hyperref}
+\usepackage{makeidx}
+\usepackage[tableposition=top]{caption}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\begin{document}
+
+\begin{equation}
+\left[
+\begin{array}{cccc}
+a_{11} & a_{12} & \ldots & a_{1K} \\
+a_{21} & a_{22} & \ldots & a_{2K} \\
+\vdots & a_{K2} & \ddots & \vdots \\
+a_{K1} & a_{K2} & \ldots & a_{kk} \\
+\end{array}
+\right]*
+\left[
+\begin{array}{c}
+x_1 \\
+x_2 \\
+\vdots \\
+x_K \\
+\end{array}
+\right] =
+\left[
+\begin{array}{c}
+b_1\\
+b_2\\
+\vdots\\
+b_K\\
+\vdots\\
+\end{array}
+\right]
+\end{equation}
+
+
+\begin{verbatim}
+for(int i=1; i<10;i++)
+{
+
+cout << "i=" << i;
+
+}
+\end{verbatim}
+
+\begin{algorithmic}
+\FOR{i=0,$\ldots$,10}
+\item{\verb+cout<<"i="'<<i;+}
+\ENDFOR
+\end{algorithmic}
+
+%numery https://github.com/lukzmu/university-pu/blob/master/03.%20Latex%20-%20Formuly%20matematyczne/c2-PU_new.pdf
+%11, 16, 28, 23, 20
+%Procedura
+%i pozostale ktore nie zostaly zlozone
+\begin{equation} %jakies srodowisko
+\lim_{n \to \infty} \sum_{k=1}^{\infty} \frac{1}{k^{2}}=\frac{\pi_{2}}{6}
+\end{equation}
+\begin{equation}
+[x]_{A}=\{y\in U : a(x) = a(y), \forall a \in A \}, x\in U
+\end{equation}
+$ cos(20)=cos^{2}0-sin^{2}0 $
+\begin{equation}
+\end{equation}
+
+\begin{equation}\label{inter}
+\mu_T(x, y, r) \mbox{ if and only if } x\Rightarrow_T y \geq r
+\end{equation}
+
+\begin{equation}\label{fextraction2}
+S^{c_i}(a)=\frac{(\overline{C}^{a}_{i}-\hat{C}^{a}_{i})^{2}}{Z_{\overline{C}^{a^2}_{i}}+Z_{\hat{C}^{a^2}_{i}}}, a \in A.
+\end{equation}
+
+\begin{equation}
+MSTR_{c_{i}}(a)=card\{C_i^a\}*(\bar{C}_i^a-\hat{C}_i^a)^2
+\end{equation}
+
+\begin{equation}
+Balanced.acc=\frac{acc_{c_1}+acc_{c_2}+...+acc_{c_k}}{k}
+\end{equation}
+
+\begin{tiny}
+\begin{equation}
+C^{a}_{i} \wedge_{\varepsilon} \{U \backslash C^{a}_{i}\} = \frac{card\{a(u) \in C^a_i: \exists a(v) \in \{U \backslash C^a_i\} ;\frac{|a(u)-a(v)|}{train_a} \leq \varepsilon\} + card\{a(v) \in \{U \backslash C^a_i\}: \exists a(u) \in  C^a_i ;\frac{|a(u)-a(v)|}{train_a} \leq \varepsilon\}}{card\{U\}}
+\end{equation}
+\end{tiny}
+
+\end{document}
