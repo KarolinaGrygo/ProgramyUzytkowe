@@ -1,0 +1,121 @@
+\documentclass{article}
+%\usepackage[MeX]{polski}
+%\usepackage[cp1250]{inputenc}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{hyperref}
+\usepackage{makeidx}
+\usepackage[tableposition=top]{caption}
+\usepackage{algorithmic}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{sidecap}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\begin{document}
+
+		
+\begin{table}
+\begin{center}
+			\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multirow{3}{*}{No. of visual words} & \multicolumn{5}{c|}{Dataset} \\ \cline{2-6}
+			  & 2 & 3 & 4 & 5 & 6 \\ \hline
+			  & 7 & 7 & 7 & 7 & 7 \\ \hline
+			
+\end{tabular}
+\caption{9 (Tabela 15)}
+\end{center}
+\end{table}
+
+
+\begin{table}
+\begin{center}
+\rowcolors{1}{pink}{purple}
+\begin{tabular}{ccc}
+xxx & xxx & 333 \\
+xxx & xzx & fdf \\
+yyy & zzz & gdf \\
+yyy & zzz & dgd \\
+\end{tabular}
+\caption{jedna kolorowa}
+
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline
+\hline 
+$x_{1}$ & $x_{2}$ & ($x_{1}$AND$x_{2}$)  \\ \hline
+1 & 1 & 1 \\ 
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 0 \\
+\hline \hline
+\end{tabular}
+\caption{2 (Tabela 11)}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|r|l|}
+\hline
+7C0 & hexadecimal \\
+3700 & octal \\ \cline{2-2}
+11111000000 & binary \\ 
+\hline
+\hline 
+1984 & decimal \\ \hline
+\end{tabular}
+\caption{3 (bez numeru)}
+\end{center}
+\end{table}
+
+\newpage
+
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{gull}
+	\caption{mewa jeden}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+    \reflectbox{%
+      \includegraphics[width=0.5\textwidth]{gull}}
+  \caption{mewa dwa}
+\end{figure}
+
+
+\ref{manyTigers}
+\begin{figure}[here]
+\vspace{0pt}
+\begin{center}
+
+\reflectbox{
+\includegraphics[scale=0.1]{tygrys}
+}
+\includegraphics[scale=0.15]{tygrys}
+\reflectbox{
+\includegraphics[scale=0.2]{tygrys}
+}
+\includegraphics[scale=0.25]{tygrys}
+\caption{obrazki tygrysa}
+\label{manyTigers}
+\end{center}
+
+\end{figure}
+
+
+\end{document}
